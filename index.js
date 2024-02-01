@@ -1,0 +1,1 @@
+const tilesContainer= document.querySelector('.game-grid');
