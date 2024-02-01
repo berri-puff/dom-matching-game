@@ -1,3 +1,23 @@
 *{
     text-align: center;
 }
+
+.game-grid {
+    display: inline-grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:  auto auto auto;
+}
+
+.grid-button {
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    border: 2px solid green
+}
+
+.card {
+    height: 150px;
+        width: auto;
+}
