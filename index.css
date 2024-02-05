@@ -2,10 +2,21 @@
     text-align: center;
 }
 
-.game-grid {
+#game-grid {
     display: inline-grid;
     column-gap: 10px;
     row-gap: 10px;
+    height: 532px;
+    width: 475px;
+    margin: 0;
     grid-template-columns: repeat(3, 170px);
+    background-color:rgb(247, 181, 100);
 }
+
+.card {
+     margin: 2.5px;
+     height: 128px;
+     width: 90px;
+}
+
 

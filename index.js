@@ -1,1 +1,1 @@
-const tilesContainer= document.querySelector('.game-grid');
+let moves = 0
