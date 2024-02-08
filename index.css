@@ -3,13 +3,13 @@
 }
 
 #game-grid {
-    display: inline-grid;
-    column-gap: 10px;
-    row-gap: 10px;
-    height: 532px;
-    width: 475px;
-    margin: 0;
-    grid-template-columns: repeat(3, 170px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    height: 500px;
+    width: 380px;
+    margin: 0 auto;
+    
     background-color:rgb(247, 181, 100);
 }
 
