@@ -1,5 +1,7 @@
-*{
+body{
     text-align: center;
+    background-size: cover;
+    background: url(https://i.redd.it/w3d8hg18r4o41.jpg);
 }
 
 #game-grid {
@@ -9,8 +11,8 @@
     height: 500px;
     width: 380px;
     margin: 0 auto;
-    
-    background-color:rgb(247, 181, 100);
+    background-color: whitesmoke;
+    border: 6px double ;
 }
 
 .card {

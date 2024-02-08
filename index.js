@@ -6,6 +6,8 @@ let cardSet;
 let board = [];
 const rows = 3;
 const columns = 4;
+let firstCard;
+let secondCard;
 
 window.onload = function() {
     shuffleCards();
@@ -45,14 +47,45 @@ function hideCards() {
     for (let r = 0; r < rows; r++ ) {
         for (let c =0; c < columns; c++) {
             let card = document.getElementById(r.toString() + '-' + c.toString())
-            card.src = 'Leaf.jpg'
+            card.src = 'Leaf.png'
         }
     }
 }
 
 function chosenCard () {
-    if (this.src.includes('Leaf')) {
-        
+    if (this.src.includes('Leaf')){
+        if (!firstCard) {
+            firstCard = this;
+            let coords = firstCard.id.split('-')
+            let r = parseInt(coords[0])
+            let c = parseInt(coords[1])
+            firstCard.src = board[r][c] + '.png'
+        }
+        else if (!secondCard && this != firstCard){
+            secondCard = this
+            let coords = secondCard.id.split('-')
+            let r = parseInt(coords[0])
+            let c = parseInt(coords[1])
+            secondCard.src = board[r][c] + '.png'
+            setTimeout(update, 1000)
+        }
     }
 }
+function update () {
+    if (firstCard.src != secondCard.src) {
+        firstCard.src = 'Leaf.png';
+        secondCard.src = 'Leaf.png'
+       moves +=1
+       document.getElementById('move-count').innerText = moves
+    }else {
+        moves +=1
+        document.getElementById('move-count').innerText = moves
+    }
+    firstCard = null;
+    secondCard = null
+}
+
+
+
+
 
