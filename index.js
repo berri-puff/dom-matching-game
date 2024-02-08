@@ -39,7 +39,6 @@ for (let r = 0; r < rows; r++) {
     }
     board.push(row)
 }
-console.log(board)
 setTimeout(hideCards, 0)
 }
 
