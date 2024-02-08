@@ -8,6 +8,8 @@ const rows = 3;
 const columns = 4;
 let firstCard;
 let secondCard;
+const refresh = document.getElementById('refresh')
+refresh.addEventListener('click', reset)
 
 window.onload = function() {
     shuffleCards();
@@ -82,6 +84,10 @@ function update () {
     }
     firstCard = null;
     secondCard = null
+}
+
+function reset() {
+    window.location.reload()
 }
 
 

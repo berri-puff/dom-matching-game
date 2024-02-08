@@ -2,6 +2,7 @@ body{
     text-align: center;
     background-size: cover;
     background: url(https://i.redd.it/w3d8hg18r4o41.jpg);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #game-grid {
@@ -11,8 +12,8 @@ body{
     height: 500px;
     width: 380px;
     margin: 0 auto;
-    background-color: whitesmoke;
-    border: 6px double ;
+    background-color: rgb(250, 227, 216) ;
+    border: 6px double skyblue;
 }
 
 .card {
@@ -20,5 +21,42 @@ body{
      height: 128px;
      width: 90px;
 }
+
+.move-line{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid green;
+    border-radius: 7px;
+    box-shadow: 3px 4px 1px goldenrod;
+    margin: 7px;
+    font-size: larger;
+    background-color: whitesmoke;
+}
+
+#refresh {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid rgb(218, 128, 177);
+    border-radius: 7px;
+    box-shadow: 3px 4px 1px rgb(25, 106, 138);
+    margin: 7px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#move-count {
+   font-size: x-large;
+   font-weight: bolder;
+   color: skyblue;
+   text-decoration: underline;
+}
+
+h1 {
+    font-size: 55px;
+color: rgb(94, 128, 240);
+text-shadow: 4px 3px 1px rgb(218, 163, 82);
+text-decoration: 5px underline wavy;
+}
+
 
 
